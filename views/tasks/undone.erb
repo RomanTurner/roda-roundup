@@ -1,0 +1,9 @@
+<h2>Undone Tasks</h2>
+<ul>
+  <% @tasks.each do |task| %>
+    <li class="<%= task.done? ? :done : :todo %>">
+      <input type="checkbox"<%= " checked" if task.done? %>>
+      <%= task.title %>
+    </li>
+  <% end %>
+</ul>

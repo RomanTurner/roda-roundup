@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>><%= @page_title || "To-Do or not To-Do" %></title>
+    <style>
+      ul { list-style: none; }
+      .todo { color: red;}
+      .done { color: green;}
+    </style>
+    <script src="https://unpkg.com/htmx.org@1.8.2"></script>
+  </head>
+  <body>
+    <h1>To-Do or not To-Do</h1>
+    <%= yield %>
+    <div class="footer">
+      <%# <%= content_for(:footer) || render("footer") %>
+  </body>
+</html>

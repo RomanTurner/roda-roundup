@@ -1,0 +1,10 @@
+<% @page_title = "Task: #{@task.title}" %>
+<h2><%= @task.title %></h2>
+<% if @task.done? %>
+  <span class="done">[DONE]</span>
+<% else %>
+  <span class="todo">[TODO]</span>
+<% end %>
+<h3>Due Date: <%= @task.due.strftime("%v") %></h3>
+<%# <%= render(path: 'views/swap_button', engine: 'erb') %>
+<p><dfn>Firefox</dfn> is the web browser created by the Mozilla Foundation.</p>

@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    erubi (1.11.0)
+    nio4r (2.5.8)
+    puma (6.0.0)
+      nio4r (~> 2.0)
+    rack (3.0.0)
+    roda (3.61.0)
+      rack
+    sqlite3 (1.5.3-x86_64-darwin)
+    tilt (2.0.11)
+
+PLATFORMS
+  x86_64-darwin-21
+
+DEPENDENCIES
+  erubi
+  puma
+  roda
+  sqlite3
+  tilt
+
+BUNDLED WITH
+   2.3.21
